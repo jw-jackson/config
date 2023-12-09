@@ -17,6 +17,9 @@ WORKDIR /home/jackson
 RUN git clone https://github.com/jw-jackson/config.git
 
 WORKDIR /home/jackson/config
+# 由于缓存
+RUN git pull
+
 RUN chmod +x ./config.sh ./neovim/config.sh ./tmux/config.sh
 RUN ./config.sh
 
