@@ -1,0 +1,2 @@
+tmux nerd doesn't work?
+tmux -u start
